@@ -1,10 +1,34 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Hi</title>
-        <script src="./index.js"></script>
-    </head>
-    <body>
-        <p>Hello world</p>
-    </body>
+
+<head>
+  <title>Hi</title>
+  <script src="./index.js"></script>
+  <style>
+    html, body {
+      font-size: 14pt;
+      background-color: #FCFCFC
+    }
+    input {
+      font-size: 14pt;
+    }
+    body {
+      max-width: 1000px;
+      margin: auto;
+      padding: 1em;
+    }
+    div#output {
+      height: 70vh;
+      border: 1px inset #333;
+      white-space: pre-wrap;
+      padding: 0.5em;
+      overflow: auto;
+      background-color: #FEFEFE;
+    }
+  </style>
+</head>
+<body>
+  <div id="output"></div>
+  <form action="javascript:" id="forminput"><input id="input" name="input"><input type="submit" value="Enter"></form>
+</body>
 </html>
